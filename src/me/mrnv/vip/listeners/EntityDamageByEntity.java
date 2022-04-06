@@ -1,4 +1,4 @@
-package me.mrnv.vip.listeners;
+﻿package me.mrnv.vip.listeners;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

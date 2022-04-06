@@ -1,4 +1,4 @@
-package me.mrnv.vip;
+﻿package me.mrnv.vip;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package me.mrnv.vip.listeners;
+﻿package me.mrnv.vip.listeners;
 
 import java.util.ArrayList;
 import java.util.List;

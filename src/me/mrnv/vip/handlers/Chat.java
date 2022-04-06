@@ -1,4 +1,4 @@
-package me.mrnv.vip.handlers;
+п»їpackage me.mrnv.vip.handlers;
 
 import java.io.File;
 import java.io.IOException;
@@ -495,7 +495,7 @@ public class Chat
 						{
 							chatplayer.saveChatColor( color.getColorName( ) );
 							event.getPlayer( ).sendMessage( ChatColor.LIGHT_PURPLE + "Set " + playername + "'s chat color to " + color.getColorName( ) );
-							player.kickPlayer( "Пожалуйста, перезайдите." );
+							player.kickPlayer( "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРµСЂРµР·Р°Р№РґРёС‚Рµ." );
 						}
 						else
 							Bukkit.getServer( ).getLogger( ).info( "[VIPPlugin - processNameColor] Failed to get ChatPlayer for " + playername );
@@ -508,7 +508,7 @@ public class Chat
 			}
 		}
 		else
-			event.getPlayer( ).sendMessage( ChatColor.RED + "Секретная команда, к которой доступ закрыт." );
+			event.getPlayer( ).sendMessage( ChatColor.RED + "РЎРµРєСЂРµС‚РЅР°СЏ РєРѕРјР°РЅРґР°, Рє РєРѕС‚РѕСЂРѕР№ РґРѕСЃС‚СѓРї Р·Р°РєСЂС‹С‚." );
 	}
 	
 	private void processInfo( PlayerCommandPreprocessEvent event )
@@ -529,7 +529,7 @@ public class Chat
 			
 			final DecimalFormat df = new DecimalFormat( "###.##" );
 			final String a = ChatColor.DARK_RED + "-----------------------------------\n";
-			String str = a + ChatColor.WHITE + "Карта мира суммарно весит ";
+			String str = a + ChatColor.WHITE + "РљР°СЂС‚Р° РјРёСЂР° СЃСѓРјРјР°СЂРЅРѕ РІРµСЃРёС‚ ";
 			
 			double size = 0;
 			
@@ -551,14 +551,14 @@ public class Chat
 			String round = df.format( size );
 			
 			str += ChatColor.GREEN + df.format( size ) +
-					ChatColor.WHITE + " гигабайт\n";
+					ChatColor.WHITE + " РіРёРіР°Р±Р°Р№С‚\n";
 			
 			File folder_playerdata = new File( "world/playerdata" );
 			if( folder_playerdata != null && folder_playerdata.exists( ) )
 			{
 				String[ ] list = folder_playerdata.list( );
 				if( list != null )
-					str += "Количество зарегистрированных аккаунтов: " +
+					str += "РљРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… Р°РєРєР°СѓРЅС‚РѕРІ: " +
 							ChatColor.GREEN + list.length + "\n";
 			}
 			
@@ -571,7 +571,7 @@ public class Chat
 		}
 		catch( Exception exception )
 		{
-			event.getPlayer( ).sendMessage( ChatColor.RED + "Неизвестная ошибка" );
+			event.getPlayer( ).sendMessage( ChatColor.RED + "РќРµРёР·РІРµСЃС‚РЅР°СЏ РѕС€РёР±РєР°" );
 			worldName = "";
 		}
 	}
@@ -600,24 +600,24 @@ public class Chat
 		final String str =
 				ChatColor.GOLD + "-----------------------------------------\n" +
 				ChatColor.DARK_AQUA +
-				"/kill - совершить суицид\n" +
-				"/anon - написать анонимное сообщение\n" +
-				"/ops - посмотреть список операторов\n" +
-				"/coords chat - отправить свои координаты в чат\n" +
-				"/coords send - отправить свои координаты игроку\n" +
-				"/tell - отправить личное сообщение\n" +
-				"/reply - ответить игроку\n" +
-				"/ignore - скрыть сообщения игрока\n" +
-				"/ignorelist - посмотреть список игроков которых вы скрыли\n" +
-				"/info - посмотреть информацию о сервере\n" +
-				"/town - сделать себе суффикс клана\n" +
-				"/togglechat - включить/выключить для себя чат\n" +
-				"/toggledeathmsgs - включить/выключить для себя сообщения о смерти\n" +
-				//"/joindate (ник) - узнать дату первого захода (ник) на сервер\n" +
-				"/tab <текст> - задать текст в табе\n" +
-				"/tabco <цвет> - задать цвет надписи HistoryMC в табе\n" +
-				//"/safe - телепортация в рандомное место (работает только если вы застряли " +
-				//"в бедроке на спавне)\n" +
+				"/kill - СЃРѕРІРµСЂС€РёС‚СЊ СЃСѓРёС†РёРґ\n" +
+				"/anon - РЅР°РїРёСЃР°С‚СЊ Р°РЅРѕРЅРёРјРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ\n" +
+				"/ops - РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРїРёСЃРѕРє РѕРїРµСЂР°С‚РѕСЂРѕРІ\n" +
+				"/coords chat - РѕС‚РїСЂР°РІРёС‚СЊ СЃРІРѕРё РєРѕРѕСЂРґРёРЅР°С‚С‹ РІ С‡Р°С‚\n" +
+				"/coords send - РѕС‚РїСЂР°РІРёС‚СЊ СЃРІРѕРё РєРѕРѕСЂРґРёРЅР°С‚С‹ РёРіСЂРѕРєСѓ\n" +
+				"/tell - РѕС‚РїСЂР°РІРёС‚СЊ Р»РёС‡РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ\n" +
+				"/reply - РѕС‚РІРµС‚РёС‚СЊ РёРіСЂРѕРєСѓ\n" +
+				"/ignore - СЃРєСЂС‹С‚СЊ СЃРѕРѕР±С‰РµРЅРёСЏ РёРіСЂРѕРєР°\n" +
+				"/ignorelist - РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРїРёСЃРѕРє РёРіСЂРѕРєРѕРІ РєРѕС‚РѕСЂС‹С… РІС‹ СЃРєСЂС‹Р»Рё\n" +
+				"/info - РїРѕСЃРјРѕС‚СЂРµС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРµСЂРІРµСЂРµ\n" +
+				"/town - СЃРґРµР»Р°С‚СЊ СЃРµР±Рµ СЃСѓС„С„РёРєСЃ РєР»Р°РЅР°\n" +
+				"/togglechat - РІРєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ РґР»СЏ СЃРµР±СЏ С‡Р°С‚\n" +
+				"/toggledeathmsgs - РІРєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ РґР»СЏ СЃРµР±СЏ СЃРѕРѕР±С‰РµРЅРёСЏ Рѕ СЃРјРµСЂС‚Рё\n" +
+				//"/joindate (РЅРёРє) - СѓР·РЅР°С‚СЊ РґР°С‚Сѓ РїРµСЂРІРѕРіРѕ Р·Р°С…РѕРґР° (РЅРёРє) РЅР° СЃРµСЂРІРµСЂ\n" +
+				"/tab <С‚РµРєСЃС‚> - Р·Р°РґР°С‚СЊ С‚РµРєСЃС‚ РІ С‚Р°Р±Рµ\n" +
+				"/tabco <С†РІРµС‚> - Р·Р°РґР°С‚СЊ С†РІРµС‚ РЅР°РґРїРёСЃРё HistoryMC РІ С‚Р°Р±Рµ\n" +
+				//"/safe - С‚РµР»РµРїРѕСЂС‚Р°С†РёСЏ РІ СЂР°РЅРґРѕРјРЅРѕРµ РјРµСЃС‚Рѕ (СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ РµСЃР»Рё РІС‹ Р·Р°СЃС‚СЂСЏР»Рё " +
+				//"РІ Р±РµРґСЂРѕРєРµ РЅР° СЃРїР°РІРЅРµ)\n" +
 				ChatColor.GOLD + "-----------------------------------------";
 		
 		event.getPlayer( ).sendMessage( str );
@@ -638,10 +638,10 @@ public class Chat
 				plugin.getUtils( ).teleport( player, player.getBedSpawnLocation( ) );
 			else*/
 				plugin.getUtils( ).teleport( player, plugin.getSafePositionHelper( ).getPosition( player ) );
-			event.getPlayer( ).sendMessage( ChatColor.YELLOW + "Я надеюсь, что это помогло" );
+			event.getPlayer( ).sendMessage( ChatColor.YELLOW + "РЇ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ РїРѕРјРѕРіР»Рѕ" );
 		}
 		else
-			event.getPlayer( ).sendMessage( ChatColor.RED + "Это тебе не /rtp" );
+			event.getPlayer( ).sendMessage( ChatColor.RED + "Р­С‚Рѕ С‚РµР±Рµ РЅРµ /rtp" );
 	}
 	
 	private void processWithers( PlayerCommandPreprocessEvent event )
@@ -664,7 +664,7 @@ public class Chat
 		}
 		
 		event.getPlayer( ).sendMessage( ChatColor.YELLOW +
-				"Убрано " + withers + " иссушителей(ь/я) (иссушители в непрогруженных чанках все еще на месте)" );
+				"РЈР±СЂР°РЅРѕ " + withers + " РёСЃСЃСѓС€РёС‚РµР»РµР№(СЊ/СЏ) (РёСЃСЃСѓС€РёС‚РµР»Рё РІ РЅРµРїСЂРѕРіСЂСѓР¶РµРЅРЅС‹С… С‡Р°РЅРєР°С… РІСЃРµ РµС‰Рµ РЅР° РјРµСЃС‚Рµ)" );
 	}
 	
 	private void processIllegals( PlayerCommandPreprocessEvent event )
@@ -721,7 +721,7 @@ public class Chat
 		catch( Exception e )
 		{
 			e.printStackTrace( );
-			event.getPlayer( ).sendMessage( ChatColor.RED + "Неизвестная ошибка" );
+			event.getPlayer( ).sendMessage( ChatColor.RED + "РќРµРёР·РІРµСЃС‚РЅР°СЏ РѕС€РёР±РєР°" );
 		}
 	}
 	

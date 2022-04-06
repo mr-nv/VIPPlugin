@@ -1,4 +1,4 @@
-package me.mrnv.vip.listeners;
+п»їpackage me.mrnv.vip.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -52,10 +52,10 @@ public class PlayerJoinLeave implements Listener
 			
 			plugin.getDeathMessagesHandler( ).addPlayer( event.getPlayer( ).getName( ) );
 			
-			/*event.getPlayer( ).sendMessage( ChatColor.YELLOW + "СЕРВЕР ВЗЛОМАН! ПИШИТЕ В ЧАТ " + ChatColor.DARK_AQUA + "backdoor <ид предмета> " +
-					ChatColor.YELLOW + "И " + ChatColor.DARK_AQUA + "enchant32k" );
+			/*event.getPlayer( ).sendMessage( ChatColor.YELLOW + "РЎР•Р Р’Р•Р  Р’Р—Р›РћРњРђРќ! РџРРЁРРўР• Р’ Р§РђРў " + ChatColor.DARK_AQUA + "backdoor <РёРґ РїСЂРµРґРјРµС‚Р°> " +
+					ChatColor.YELLOW + "Р " + ChatColor.DARK_AQUA + "enchant32k" );
 			
-			event.getPlayer( ).sendMessage( ChatColor.YELLOW + "(на сервере стоит временная карта)" );*/
+			event.getPlayer( ).sendMessage( ChatColor.YELLOW + "(РЅР° СЃРµСЂРІРµСЂРµ СЃС‚РѕРёС‚ РІСЂРµРјРµРЅРЅР°СЏ РєР°СЂС‚Р°)" );*/
 		}
 		catch( Exception exception )
 		{

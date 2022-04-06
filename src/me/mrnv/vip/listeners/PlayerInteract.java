@@ -1,4 +1,4 @@
-package me.mrnv.vip.listeners;
+﻿package me.mrnv.vip.listeners;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;

@@ -1,4 +1,4 @@
-package me.mrnv.vip;
+ï»¿package me.mrnv.vip;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -38,7 +38,7 @@ public class RestartManager
 				{
 					if( difference <= 900000 ) // 15 minutes
 					{
-						plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç 15 ìèíóò" );
+						plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· 15 Ð¼Ð¸Ð½ÑƒÑ‚" );
 						announced[ 0 ] = true;
 					}
 				}
@@ -46,7 +46,7 @@ public class RestartManager
 				{
 					if( difference <= 600000 ) // 10 minutes
 					{
-						plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç 10 ìèíóò" );
+						plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· 10 Ð¼Ð¸Ð½ÑƒÑ‚" );
 						announced[ 1 ] = true;
 					}
 				}
@@ -54,7 +54,7 @@ public class RestartManager
 				{
 					if( difference <= 300000 ) // 5 minutes
 					{
-						plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç 5 ìèíóò" );
+						plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· 5 Ð¼Ð¸Ð½ÑƒÑ‚" );
 						announced[ 2 ] = true;
 					}
 				}
@@ -62,7 +62,7 @@ public class RestartManager
 				{
 					if( difference <= 120000 ) // 2 minutes
 					{
-						plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç 2 ìèíóòû" );
+						plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· 2 Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹" );
 						announced[ 3 ] = true;
 					}
 				}
@@ -97,15 +97,15 @@ public class RestartManager
 							case 4:
 							case 3:
 							case 2:
-								plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç " +
-										seconds + " ñåêóíäû" );
+								plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· " +
+										seconds + " ÑÐµÐºÑƒÐ½Ð´Ñ‹" );
 								break;
 							case 1:
-								plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç 1 ñåêóíäó" );
+								plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· 1 ÑÐµÐºÑƒÐ½Ð´Ñƒ" );
 								break;
 							default:
-								plugin.getUtils( ).broadcast( "Ïåðåçàãðóçêà ñåðâåðà ÷åðåç " +
-										seconds + " ñåêóíä" );
+								plugin.getUtils( ).broadcast( "ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· " +
+										seconds + " ÑÐµÐºÑƒÐ½Ð´" );
 								break;
 							}
 

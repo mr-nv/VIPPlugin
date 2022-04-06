@@ -1,4 +1,4 @@
-package me.mrnv.vip;
+п»їpackage me.mrnv.vip;
 
 import me.mrnv.vip.PluginUtilities;
 
@@ -328,7 +328,7 @@ public class VIPPlugin extends JavaPlugin
 							{
 								chatplayer.saveChatColor( color.getColorName( ) );
 								sender.sendMessage( ChatColor.LIGHT_PURPLE + "Set " + playername + "'s chat color to " + color.getColorName( ) );
-								player.kickPlayer( "Пожалуйста, перезайдите." );
+								player.kickPlayer( "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРµСЂРµР·Р°Р№РґРёС‚Рµ." );
 							}
 							else
 								Bukkit.getServer( ).getLogger( ).info( "[VIPPlugin] Failed to get ChatPlayer for " + playername );
@@ -344,7 +344,7 @@ public class VIPPlugin extends JavaPlugin
 			}
 			else
 			{
-				sender.sendMessage( ChatColor.RED + "Поздравляем! Вы нашли секретную команду" );
+				sender.sendMessage( ChatColor.RED + "РџРѕР·РґСЂР°РІР»СЏРµРј! Р’С‹ РЅР°С€Р»Рё СЃРµРєСЂРµС‚РЅСѓСЋ РєРѕРјР°РЅРґСѓ" );
 				return true;
 			}
 		}
@@ -368,7 +368,7 @@ public class VIPPlugin extends JavaPlugin
 			}
 			else
 			{
-				sender.sendMessage( ChatColor.RED + "Ммм, нет, извини, тебе нельзя" );
+				sender.sendMessage( ChatColor.RED + "РњРјРј, РЅРµС‚, РёР·РІРёРЅРё, С‚РµР±Рµ РЅРµР»СЊР·СЏ" );
 				return true;
 			}
 		}

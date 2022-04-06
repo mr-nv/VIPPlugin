@@ -1,4 +1,4 @@
-package me.mrnv.vip;
+﻿package me.mrnv.vip;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

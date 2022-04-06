@@ -1,4 +1,4 @@
-package me.mrnv.vip.handlers;
+﻿package me.mrnv.vip.handlers;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package me.mrnv.vip.listeners;
+п»їpackage me.mrnv.vip.listeners;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -78,13 +78,13 @@ public class PlayerChat implements Listener
     		lowercase.startsWith( "/minecraft:me" ) )
     	{
     		event.setCancelled( true );
-    		event.getPlayer( ).kickPlayer( "/me выключен. А жаль." );
+    		event.getPlayer( ).kickPlayer( "/me РІС‹РєР»СЋС‡РµРЅ. Рђ Р¶Р°Р»СЊ." );
     		return;
     	}
     	else if( lowercase.startsWith( "/minecraft:say" ) )
     	{
     		event.setCancelled( true );
-    		event.getPlayer( ).kickPlayer( "/minecraft:say выключен. А жаль." );
+    		event.getPlayer( ).kickPlayer( "/minecraft:say РІС‹РєР»СЋС‡РµРЅ. Рђ Р¶Р°Р»СЊ." );
     		return;
     	}
     	else if( lowercase.startsWith( "/lagg" ) )
@@ -97,7 +97,7 @@ public class PlayerChat implements Listener
     	}
     	else if( lowercase.startsWith( "/minecraft:tell" ) )
     	{
-    		event.getPlayer( ).sendMessage( ChatColor.RED + "Настоятельно рекомендую использовать /tell" );
+    		event.getPlayer( ).sendMessage( ChatColor.RED + "РќР°СЃС‚РѕСЏС‚РµР»СЊРЅРѕ СЂРµРєРѕРјРµРЅРґСѓСЋ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ /tell" );
     		event.setCancelled( true );
     		return;
     	}
